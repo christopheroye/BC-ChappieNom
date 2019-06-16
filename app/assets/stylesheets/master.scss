@@ -8,27 +8,13 @@
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 2px 2px 2px 0 #d0d0d0;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
-}
-
-
-.article.post{
-  -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
-  -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
-  box-shadow:1px 1px 2px 0 #d0d0d0
-}
-
-
-.article-container article.post{
-  background:#fff;
-  border:1px solid #ccc;
-  border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
 }
 
 
@@ -39,18 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-  background: image_url('papyrus-dark.png');
+  background: #dfe3ee;
   font-family: "sofiapro-light", sans-serif;
 }
 
 
 .navbar {
-  background: image_url('prism.png');
-  box-shadow: 0px 1px 3px #2a2a2a;
-}
-
-
-.navbar-inverse .navbar-brand {
-  color: #E3E85A;
-  font-family: 'Hind', sans-serif;
+  background: #008080;
+  box-shadow: 0px 1px 3px #008080;
 }
