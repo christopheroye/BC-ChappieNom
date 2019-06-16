@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
 @import "bootstrap";
+@import "font-awesome";
+
+@posts = Post.paginate(page: params[:page])
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
