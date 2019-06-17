@@ -1,10 +1,14 @@
-<h2>Change your password</h2>
+<div class="booyah-box col-10 offset-1">
+  <br />
+  <h2>Change your password</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
 
   <%= f.input :reset_password_token, as: :hidden %>
   <%= f.full_error :reset_password_token %>
+
+  <br />
 
   <div class="form-inputs">
     <%= f.input :password,
@@ -20,5 +24,6 @@
     <%= f.button :submit, "Change my password" %>
   </div>
 <% end %>
+<br />
 
 <%= render "devise/shared/links" %>
