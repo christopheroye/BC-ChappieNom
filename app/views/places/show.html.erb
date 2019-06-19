@@ -5,41 +5,22 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-    <style>
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-
-    <% if @place.latitude.present? && @place.longitude.present? %>
-
-    <script>
-
-      function initMap() {
-        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    </script>
+  </head>
+  <body>
     
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjnerZPgqhkqZm6rH0DBTwOHnMwgv-gjo&callback=initMap">
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 12
+        });
+      }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=(AIzaSyBvOsQTnJ8_OAx6sYCr1FSo9M7SyS76ETU)&callback=initMap"
+    async defer></script>
 
-  <div id="map"></div>
-<% end %>
+    <div id="map"></div>
 
 <br />
 
