@@ -71,6 +71,7 @@ gem "geocoder"
 gem "figaro"
 gem 'sendgrid-ruby'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+gem 'pry-rails'
 
 
 source 'https://rails-assets.org' do

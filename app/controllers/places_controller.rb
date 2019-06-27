@@ -1,8 +1,13 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  require 'will_paginate/array'
 
   def index
-    @places = Place.all
+    @place =[]
+    Place.all.each do |place|
+      @places.push(place)
+    end
+    @places = Place.paginate(page: params[:page], per_page: 10)
   end
 
   def new
