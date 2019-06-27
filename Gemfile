@@ -70,6 +70,8 @@ gem 'devise'
 gem "geocoder"
 gem "figaro"
 gem 'sendgrid-ruby'
+gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
