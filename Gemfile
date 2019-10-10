@@ -72,6 +72,7 @@ gem "figaro"
 gem 'sendgrid-ruby'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'pry-rails'
+gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
 
 
 source 'https://rails-assets.org' do

@@ -1,10 +1,12 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'brooke-lark-261793-unsplash.jpg', class: 'd-block img-fluid' %>
+      <%= image_tag 'photo-1560452460-77587ba1893a.jpg', class: 'd-block img-fluid' %>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'toa-heftiba-243303-unsplash.jpg', class: 'd-block img-fluid' %>
+      <%= image_tag 'pabxnSMrQ2SudSP6nEzc6Q_thumb_17.jpg', class: 'd-block img-fluid' %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -17,11 +19,14 @@
   </a>
 </div>
 
-<% @places.each do |place| %>
+<% @place.each do |place| %>
   <div class="booyah-box col-10 offset-1">
     <br />
     <h1><%= link_to place.name, place_path(place) %></h1><br />
+    <div class="address">
+    <span class="fas fa-map-marker-alt"></span> &nbsp;
     <i><%= place.address %></i><br /><br />
+    </div>
     <p><%= place.description %></p><br />
 
     <% if place.user.present? %>
