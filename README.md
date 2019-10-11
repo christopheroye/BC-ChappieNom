@@ -1,24 +1,27 @@
-# README
+## Nomster Yelp Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Keep a record of all of your favorite places you like to "nom nom nom" 
 
-Things you may want to cover:
+Here's a Yelp Clone that features user authentication, Google map API integration, dashboards, automated emails, user comments, address geolocation, validations, and homepage sliders all wrapped in a mobile first designed web application.
 
-* Ruby version
+## Features 
 
-* System dependencies
+* Google Maps API
+* User authentication
+* User comments & ratings
+* Image uploading hosted on AWS
+* User dashboards with statistics on contributions
 
-* Configuration
+# Screenshots
 
-* Database creation
+## Homepage
 
-* Database initialization
+<img src="Homepage.png" alt="Home Page">
 
-* How to run the test suite
+## Show Page
 
-* Services (job queues, cache servers, search engines, etc.)
+<img src="ShowPage.png" alt="Show Page">
 
-* Deployment instructions
+## Dashboard
 
-* ...
+<img src="Dashboard.png" alt="Dashboard">
