@@ -12,6 +12,14 @@ Here's a Yelp Clone that features user authentication, Google map API integratio
 * Image uploading hosted on AWS
 * User dashboards with statistics on contributions
 
+## Using the app
+
+1. Create and account and log in.
+2. Click **New Place**.
+3. Fill out the form > **Submit** to add your new place.
+
+Check out your **My Profile** page to view places you created and your comments on other places.
+
 # Screenshots
 
 ## Homepage
